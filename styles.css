@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+#navbar {
+    background-color: rgb(167, 199, 231);  
+}
+
+.topNav {
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 25px 250px;
+}
+
+.logo {
+    height: 125px;
+    width: auto;
+}
+
+.nav__links {
+    display: flex;
+    list-style: none;
+}
+
+.nav__link {
+    color: black;
+    margin: 0 20px;
+    font-size: 24px;
+}
+
+.film {
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.search__bar {
+    display: block;
+    float: right;
+    margin-right: 15px;
+    padding: 10px 0;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    font-size: 17px;
+    border-radius: 20px;
+    border: 1px;
+    font-weight: 20;
+}
+
+#filter {
+    display: block;
+    float: right;
+    margin-right: 250px;
+    padding: 10px 75px;
+    border-radius: 20px;
+    font-size: 17px;
+    border: none;
+    resize: none;
+}
+
+.option {
+    border-radius: 20px;
+    padding: 10px;
+    margin: 0 0 0 25px;
+
+}
+
+
+

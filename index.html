@@ -9,27 +9,50 @@
     <link rel="stylesheet" href="./styles.css">
 </head>
 
-<body id="navbar">
-    <nav class="topNav">
-        <img src="./assets/Studio_Ghibli_logo.svg.png" class="logo">        <ul class="nav__links">
-            <li>
-                <a href="#" class="nav__link">Home</a>
-            </li>
-            <li>
-                <a href="#films" class="nav__link film">Films</a>
-            </li>
-        </ul>
-    </nav>
-    <select id="filter">
-        <option class="option" value="" disabled selected>Filter</option>
-        <option class="option" value="A-Z">A-Z</option>
-        <option class="option" value="Z-A">Z-A</option>
-    </select>
-    <input type="text" placeholder="Search For Films..." class="search__bar">
+<body id="films__body">
+    <section>
+        <nav>
+            <div class="nav__container">
+                <img class="logo" src="./assets/Studio_Ghibli_logo.svg.png" alt="">
+                <ul class="nav__links">
+                    <li>
+                        <a href="#" class="nav__link">HOME</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav__link filmsBtn">FILMS</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </section>
 </body>
 
-<main id="film__page">
-    
+<main id="films__main">
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="films__header">
+                    <h2 class="section__title films__header--title">
+                        ALL FILMS
+                    </h2>
+                    <div class="right__header">
+                        <div class="searchBar--header">
+                            <input class="searchBar" type="text" placeholder="Search For Films...">
+                        </div>
+                        <select id="filter">
+                            <option value="" disabled selected>Filter</option>
+                            <option value="A-Z">A-Z</option>
+                            <option value="Z-A">Z-A</option>
+                            <option value="Rating">Rating</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="films">
+                    <i class="fa-solid fa-spinner"></i>
+                </div>
+            </div>
+        </div>
+    </section>
 </main>
 
 </html>

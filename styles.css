@@ -12,6 +12,18 @@
     --bg-color: #fff;
 }
 
+ul {
+    list-style: none
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color:hsl(0 4% 15% / 10%)
+}
+
 img {
     width: 100%;
 }
@@ -27,18 +39,35 @@ header {
     width: 100%;
     background: var(--bg-color);
     box-shadow: 0 1px 4px hsl(0 4% 15% / 10%);
+    height: 25vh;
 }
 
 #navBar {
+    margin: 0 250px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 0;
 }
 
-.container {
-    max-width: 1068px;
-    margin: auto;
-    width: 100%;
+.logo {
+    max-width: 200px;
+    height: auto;
+    cursor: pointer;
 }
 
+.navLinks {
+    display: flex;
+}
+
+.navLink {
+    margin: 0 20px;
+}
+
+
+#cart-icon {
+    cursor: pointer;
+}
+
+.shop {
+    display: flex;
+}

@@ -64,7 +64,7 @@ const Cart = ({ cart, updateCart, removeItem, totals }) => {
                 {(!cart || !cart.length) && (
                   <div className="cart__empty">
                     <img className="cart__empty--img" src={EmptyCart} alt="" />
-                    <h2>You don't have any books in your cart!</h2>
+                    <h2>Your Cart is Empty. Add Items in Your Cart!</h2>
                     <Link to="/books">
                       <button className="btn">Browse books</button>
                     </Link>
@@ -86,7 +86,7 @@ const Cart = ({ cart, updateCart, removeItem, totals }) => {
                   <span>Total</span>
                   <span>${totals.total.toFixed(2)}</span>
                 </div>
-                <button className="btn btn__checkout no-cursor" onClick={() => alert(`Haven't got around to doing this :(`)}>
+                <button className="btn btn__checkout no-cursor" onClick={() => alert(`This button is for display. There is no implementation`)}>
                   Proceed to checkout
                 </button>
               </div>
